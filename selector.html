@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<style>
+    h1 {
+        color: red;
+    }
+    
+    .h2c {
+        color: blue;
+    }
+    
+    #h3i {
+        color: yellowgreen;
+    }
+    
+    span,
+    b {
+        color: cyan;
+    }
+    
+    p em {
+        color: yellow;
+    }
+    /*Child selector*/
+    
+    h4>em {
+        color: red;
+    }
+    /*Next slibing Selector*/
+    
+    h5+p {
+        color: blueviolet;
+    }
+    /*All*/
+    
+    h5~a {
+        color: black;
+    }
+</style>
+
+<body>
+    <h1>I am Element selector</h1>
+    <h2 class="h2c">I am Class selector</h2>
+    <h3 id="h3i">I am Id selector</h3>
+    <span>I am <b>H</b></span>
+    <p>Hello My name is <em>Zaw</em></p>
+    <h4>I am <em>Em</em></h4>
+    <h5>
+        I am H5
+    </h5>
+    <p>I am p1</p>
+    <p>I am p2</p>
+    <a href="#">I am a1</a><br>
+    <a href="#">I am a2</a>
+</body>
+
+</html>

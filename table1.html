@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table List</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+    
+    table,
+    thead,
+    tbody,
+    th,
+    td {
+        border: 1px solid red;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    
+    .cap {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    th {
+        background-color: lightgray;
+        color: black;
+    }
+</style>
+
+<body>
+    <center>
+        <table>
+            <caption class="cap">User List</caption>
+            <thead>
+                <th>No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Address</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Zaw Gyi</td>
+                    <td>xaw@gmail.com</td>
+                    <td colspan="2">Pathein</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aung Gyi</td>
+                    <td>aung@gmail.com</td>
+                    <td rowspan="2">aungg</td>
+                    <td>Yangon</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rose</td>
+                    <td>rose@gmail.com</td>
+                    <td>Bago</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>WTF</td>
+                    <td>wtf@gmail.com</td>
+                    <td>whatthefu*k</td>
+                    <td>Yangon</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>No F</th>
+                <th>Name F</th>
+                <th>Email F</th>
+                <th>Password F</th>
+                <th>Address F</th>
+            </tfoot>
+        </table>
+        <br>
+        <table>
+            <caption class="cap">Order List</caption>
+            <thead>
+                <th>No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Zaw Gyi</td>
+                    <td>xaw@gmail.com</td>
+                    <td>Pathein</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aung Gyi</td>
+                    <td>aung@gmail.com</td>
+                    <td>Yangon</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rose</td>
+                    <td>rose@gmail.com</td>
+                    <td>Bago</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>No F</th>
+                <th>Name F</th>
+                <th>Email F</th>
+                <th>Address F</th>
+            </tfoot>
+        </table>
+    </center>
+</body>
+
+</html>

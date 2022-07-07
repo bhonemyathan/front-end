@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js test 04 scope2</title>
+</head>
+
+<body>
+</body>
+<script>
+    var car = "KIA",
+        color = "RED";
+
+    function myFunction() {
+        year = 2001;
+        var color = "blue";
+        document.write("IN block:" + car + "/" + year + "/" + color + "<br>");
+        car = "HYUNDAI";
+    }
+    myFunction();
+    document.write("In Global:" + car + "/" + year + "/" + color + "<br>");
+</script>
+
+</html>

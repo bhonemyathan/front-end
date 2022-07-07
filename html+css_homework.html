@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html+Css</title>
+</head>
+<style>
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: black;
+    }
+    
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    th {
+        background-color: cyan;
+    }
+    
+    td {
+        text-align: center;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    td>img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .table {
+        color: black;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin-left: 15%;
+        margin-right: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        background-color: black;
+    }
+    
+    .del {
+        background-color: darkred;
+        color: white;
+        width: 60px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    caption {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .edit {
+        background-color: blue;
+        color: white;
+        width: 60px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .del:hover {
+        background-color: red;
+    }
+    
+    .edit:hover {
+        background-color: lightblue;
+        color: black;
+    }
+    
+    .actiontbl {
+        width: 200px;
+    }
+    
+    .form {
+        border: 2px solid white;
+        margin-left: 37%;
+        border-radius: 10px;
+        margin-right: 37%;
+        margin-top: 10px;
+        padding-left: 15px;
+        padding-right: 20px;
+        background-color: black;
+        color: white;
+    }
+    
+    label {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    input {
+        display: block;
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        width: 150px;
+        height: 40px;
+        background-color: blue;
+        cursor: pointer;
+        font-size: 16px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 25%;
+        margin-right: 40%;
+        margin-bottom: 10px;
+    }
+    
+    .btn:hover {
+        background-color: lightblue;
+        color: black;
+    }
+</style>
+
+<body>
+    <div class="table">
+        <table>
+            <caption>Products Detail List</caption>
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th class="actiontbl">Action</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dell Inspiron 3511 (I3) 11th Gen (Silver)</td>
+                    <td>11</td>
+                    <td>Ks 1,285,000</td>
+                    <td><img src="https://static-01.shop.com.mm/p/2867735c6fb7a4069d0a93dcb12864e3.jpg" alt="dell"></td>
+                    <td><button class="del">Delete</button><button class="edit">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ASUS TUF Gaming A15</td>
+                    <td>5</td>
+                    <td>Ks 2,203,000</td>
+                    <td><img src="https://static-01.shop.com.mm/p/c1f4429b1ed6238890e6ff2b66270b3b.jpg" alt="asus"></td>
+                    <td><button class="del">Delete</button><button class="edit">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>MacBook Pro 15-inch (2019)</td>
+                    <td>2</td>
+                    <td>Ks 3,990,000</td>
+                    <td><img src="https://static-01.shop.com.mm/p/47854ceddc397c2d083050c73513637a.jpg" alt="mac"></td>
+                    <td><button class="del">Delete</button><button class="edit">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>HP Pavilion Gaming Laptop 15-dk2097nr</td>
+                    <td>10</td>
+                    <td>Ks 2,042,350</td>
+                    <td><img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07963304.png?imwidth=270&imdensity=1" alt="hp"></td>
+                    <td><button class="del">Delete</button><button class="edit">Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="form">
+        <form action="#">
+            <h1>Product Form</h1>
+            <label for="ID">ID</label>
+            <input type="number" name="ID" id="ID" required>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="qty">Qty</label>
+            <input type="number" name="qty" id="qty" required>
+            <label for="price">Price(KS)</label>
+            <input type="number" name="price" id="price" required>
+            <label for="image">Image URL</label>
+            <input type="url" name="image" id="image" required>
+            <button class="btn">ADD DATA</button>
+        </form>
+    </div>
+</body>
+
+</html>

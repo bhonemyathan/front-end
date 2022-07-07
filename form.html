@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data</title>
+</head>
+<style>
+    body {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    label,
+    input {
+        display: block;
+        width: 270px;
+        height: 30px;
+        margin: 10px;
+    }
+    
+    div {
+        border: 1px solid #ffff00;
+        width: 300px;
+        height: 500px;
+        padding: 20px 20px;
+        border-radius: 5px;
+    }
+    
+    .btn {
+        width: 100px;
+        height: 35px;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 30px;
+        background-color: lightblue;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: lightgray;
+    }
+</style>
+
+<body>
+    <div>
+        <center>
+            <h1>Data Form</h1>
+        </center>
+        <form action="#">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="tasks">Tasks</label>
+            <input type="text" name="tasks" id="tasks">
+            <label for="Address">Address</label>
+            <input type="text" name="Address" id="Address">
+            <center>
+                <input class="btn" type="submit" value="Add">
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

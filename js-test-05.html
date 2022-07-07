@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js test form 05</title>
+</head>
+
+<body>
+    <form name="frm" id="frm">
+        <input type="text" name="name" id="name">
+        <input type="text" name="age" id="age">
+        <input type="checkbox" name="interest" value="movie">movie
+        <input type="checkbox" name="interest" value="game">game
+        <button type="button" id="btn" onclick="clickTest();">Test</button>
+    </form>
+</body>
+<script>
+    document.getElementById('name').value = 'Test name';
+    document.getElementsByName('age')[0].value = '20';
+    document.frm.interest[0].checked = 'checked';
+
+    function clickTest() {
+        document.forms['frm']['name'].value = 'Name2';
+        document.forms['frm']['age'].value = '30';
+        document.frm.name.style.color = 'red';
+        document.frm.age.style.color = 'blue';
+    }
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS test 03 function</title>
+</head>
+
+<body>
+    <h1>JS test 03 function</h1>
+    <button onclick="fnClick()">BUTTON</button>
+</body>
+<script>
+    function fnClick() {
+        alert('clicked!' + add(10, 20));
+    }
+
+    function add(n1, n2) {
+        return n1 + n2;
+    }
+    var func = function(v1, v2) {
+        if (v1 >= v2) return -1;
+        var sum = 0;
+        for (var i = v1; i < v2; i++) {
+            sum += i;
+        }
+        return sum;
+    }
+    alert('func(20,10)=' + func(20, 10));
+    alert('func(10,20)=' + func(10, 20));
+</script>
+
+</html>
